@@ -3,7 +3,7 @@
 #### 背景
 >需求：需要做一个环形图用于展示各部分之间的比例
 
-<div align=center><img width= "371" height= "262" src="https://github.com/CalvinLeo/CLPieChart/blob/master/sample_image_1.png"/></div>
+<div align=center><img width= "371" height= "262" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_1.png"/></div>
 
 <div align=center>示意图</div>
 
@@ -12,6 +12,7 @@
 ##### 技术选型：
 
 1、在UIView的drawRect方法中绘制所需要的各种视图，饼图，指示线，文字等元素绘制出页面
+
 2、基于UIBezierPath + CAShapeLayer，UIView，UILabel等控件搭建页面
 
 两种方式都可以实现想要的效果，相比较而言，个人觉得第二种方式更容易一些，因为不需要手动绘图，基于UI控件的熟悉可以更好地完成。
@@ -49,8 +50,10 @@
 * bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:这个API会根据中心点center、半径radius、起始点startAngle、结束点endAngle、是否是顺时针clockwise这五个属性绘制出一条圆弧。
 * 然后将path路径闭合成一块区域，就变成了扇形区域。
 
-<div align=center><img src="https://github.com/CalvinLeo/CLPieChart/blob/master/sample_image_1.png"/></div>
+<div align=center><img src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
+<div align=center>扇形图</div>
 
+由上图可以看出红色扇形就是占比为0.2的一个扇形区域。
 
 
 
