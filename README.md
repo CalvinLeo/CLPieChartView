@@ -41,8 +41,8 @@
     
     CAShapeLayer *slayer = [CAShapeLayer layer];
     slayer.path = path.CGPath;
-    slayer.fillColor = [UIColor redColor].CGColor;
-    slayer.strokeColor = [UIColor redColor].CGColor;
+    slayer.fillColor = [UIColor greenColor].CGColor;
+    slayer.strokeColor = [UIColor greenColor].CGColor;
     slayer.lineCap = kCALineCapButt;
     [self.layer addSublayer:slayer];
 ```
@@ -60,7 +60,7 @@
 <div align=center>扇形图</div>
 
 
-由上图可以看出红色扇形就是占比为0.2的一个扇形区域。其实我们最后做出来的效果就是由一块一块的扇形首尾拼接起来的，所以我们需要处理的就是其他path的startAngle、endAngle参数
+由上图可以看出绿色扇形就是占比为0.2的一个扇形区域。其实我们最后做出来的效果就是由一块一块的扇形首尾拼接起来的，所以我们需要处理的就是其他path的startAngle、endAngle参数
 
 * 完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
 
