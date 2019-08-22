@@ -116,10 +116,3 @@ cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一�
 
 <div align=center><img width="375" height="812" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_6.png"/></div>
 <div align=center>最终效果图</div>
-
-
-
-
-
-
-
