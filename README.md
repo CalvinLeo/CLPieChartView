@@ -49,8 +49,11 @@
 解释一下这部分代码：
 
 1）rate：就是扇形区域所占比
+
 2）start：弧度起始点，end：弧度结束点 angle：角度，这里面的角度和弧度的相关概念介绍及转化就不介绍了
+
 3） bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:这个API会根据中心点center、半径radius、起始点startAngle、结束点endAngle、是否是顺时针clockwise这五个属性绘制出一条圆弧。
+
 4）然后将path路径闭合成一块区域，就变成了扇形区域。
 
 <div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
@@ -104,6 +107,16 @@ cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一�
 
 <div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_5.png"/></div>
 <div align=center>指示线圆圈和圆点</div>
+
+4、画线
+
+首先确定折线的拐点。其实和圆点的中心点求解方式一样，也是在饼图中心到圆弧中心的延长线上，这个点要更远一些。水平线终点的确定根据距离边距的约束多少来定，那么三个点，根据UIBezierPath 画出一条折线即可。
+
+5、画一个Label在直线的上方，然后根据自己的需要设置相应的颜色、字体大小等参数。
+
+<div align=center><img width="375" height="812" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_6.png"/></div>
+<div align=center>指示线圆圈和圆点</div>
+
 
 
 
