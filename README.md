@@ -59,7 +59,7 @@
 
 完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
 
-<div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_3.png"/></div>
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_3.png"/></div>
 <div align=center>饼图</div>
 
 
