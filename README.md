@@ -50,7 +50,7 @@
 * bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:这个API会根据中心点center、半径radius、起始点startAngle、结束点endAngle、是否是顺时针clockwise这五个属性绘制出一条圆弧。
 * 然后将path路径闭合成一块区域，就变成了扇形区域。
 
-<div align=center><img src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
+<div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
 <div align=center>扇形图</div>
 
 由上图可以看出红色扇形就是占比为0.2的一个扇形区域。
