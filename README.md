@@ -72,7 +72,39 @@
 <div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_4.png"/></div>
 <div align=center>环形图</div>
 
-3、
+3、描述线的点绘制
+
+先上相关代码
+
+```
+// 圆弧中心点
+CGFloat radianCenter = (start1 + end1) * 0.5;
+CGFloat pointX = self.bounds.size.width * 0.5 + 60 * cos(radianCenter);
+CGFloat pointY = self.bounds.size.height * 0.5 + 60 * sin(radianCenter);
+
+// 圈
+UIView *view = [[UIView alloc] initWithFrame:CGRectMake(pointX - 5.5, pointY - 5.5, 11, 11)];
+view.layer.borderColor = [UIColor colorWithRed:76/255.0 green:175/255.0 blue:80/255.0 alpha:1.0].CGColor;
+view.layer.cornerRadius = 5.5;
+view.layer.borderWidth = 1;
+view.clipsToBounds = YES;
+[self addSubview:view];
+    
+// 点
+UIView *pointView = [[UIView alloc] initWithFrame:CGRectMake(pointX - 2.5, pointY - 2.5, 5, 5)];
+pointView.backgroundColor = [UIColor colorWithRed:76/255.0 green:175/255.0 blue:80/255.0 alpha:1.0];
+pointView.layer.cornerRadius = 2.5;
+pointView.clipsToBounds = YES;
+[self addSubview:pointView];
+```
+
+这段代码会添加一个绿色的小圆圈和一个小圆点。圆圈和圆点的代码没有什么好讲的，圆圈和圆点的中点这个点的确定需要重点关注一下。
+
+cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一个点对应在Y轴上的点，可以理解这点就容易读懂pointX 和 pointY的计算。饼图的半径是50，这里取半径为60的中点延长线上的点，计算出来就是指示线圆圈的中心点。
+
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_5.png"/></div>
+<div align=center>指示线圆圈和圆点</div>
+
 
 
 
