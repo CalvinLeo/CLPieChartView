@@ -4,3 +4,7 @@
 
 <div align=center><img width= "371" height= "262" src="https://github.com/CalvinLeo/CLPieChart/blob/master/sample_image_1.png"/></div>
 
+<div align=center><title>示意图</title></div>
+
+
+
