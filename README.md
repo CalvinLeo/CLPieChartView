@@ -11,6 +11,7 @@
 
 ##### 技术选型：
 
+
 1、在UIView的drawRect方法中绘制所需要的各种视图，饼图，指示线，文字等元素绘制出页面
 
 2、基于UIBezierPath + CAShapeLayer，UIView，UILabel等控件搭建页面
@@ -53,7 +54,14 @@
 <div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
 <div align=center>扇形图</div>
 
-由上图可以看出红色扇形就是占比为0.2的一个扇形区域。
+
+由上图可以看出红色扇形就是占比为0.2的一个扇形区域。其实我们最后做出来的效果就是由一块一块的扇形首尾拼接起来的，所以我们需要处理的就是其他path的startAngle、endAngle参数
+
+完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
+
+<div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_3.png"/></div>
+<div align=center>饼图</div>
+
 
 
 
