@@ -2,4 +2,5 @@
 
 需求：需要做一个环形图用于展示各部分之间的比例
 
-* ![示例图](https://github.com/CalvinLeo/CLPieChart/blob/master/sample_image_1.png)
+<div align=center>![示例图](https://github.com/CalvinLeo/CLPieChart/blob/master/sample_image_1.png)
+
