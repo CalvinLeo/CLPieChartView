@@ -56,7 +56,7 @@
 
 4）然后将path路径闭合成一块区域，就变成了扇形区域。
 
-<div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
+<div align=center><img width="369" height="324" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
 <div align=center>扇形图</div>
 
 
