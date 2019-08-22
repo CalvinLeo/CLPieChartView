@@ -115,7 +115,7 @@ cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一�
 5、画一个Label在直线的上方，然后根据自己的需要设置相应的颜色、字体大小等参数。
 
 <div align=center><img width="375" height="812" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_6.png"/></div>
-<div align=center>指示线圆圈和圆点</div>
+<div align=center>最终效果图</div>
 
 
 
