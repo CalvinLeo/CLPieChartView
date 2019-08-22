@@ -20,7 +20,9 @@
 
 ##### 实现细节：
 
-1、圆环的实现，其实这里圆环是两个视图嵌套的结果，中间的白色视图其实是在饼状图的上面，同时还有一个文本输入框可以输入文字，只不过我们的需求里没有，这里就隐藏了文本框。
+1、圆环的实现，
+
+* 其实这里圆环是两个视图嵌套的结果，中间的白色视图其实是在饼状图的上面，同时还有一个文本输入框可以输入文字，只不过我们的需求里没有，这里就隐藏了文本框。
 
 相关的代码：
 
@@ -46,10 +48,10 @@
 ```
 解释一下这部分代码：
 
-* rate：就是扇形区域所占比
-* start：弧度起始点，end：弧度结束点 angle：角度，这里面的角度和弧度的相关概念介绍及转化就不介绍了
-* bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:这个API会根据中心点center、半径radius、起始点startAngle、结束点endAngle、是否是顺时针clockwise这五个属性绘制出一条圆弧。
-* 然后将path路径闭合成一块区域，就变成了扇形区域。
+1）rate：就是扇形区域所占比
+2）start：弧度起始点，end：弧度结束点 angle：角度，这里面的角度和弧度的相关概念介绍及转化就不介绍了
+3） bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:这个API会根据中心点center、半径radius、起始点startAngle、结束点endAngle、是否是顺时针clockwise这五个属性绘制出一条圆弧。
+4）然后将path路径闭合成一块区域，就变成了扇形区域。
 
 <div align=center><img width="375" height="667" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
 <div align=center>扇形图</div>
@@ -57,11 +59,20 @@
 
 由上图可以看出红色扇形就是占比为0.2的一个扇形区域。其实我们最后做出来的效果就是由一块一块的扇形首尾拼接起来的，所以我们需要处理的就是其他path的startAngle、endAngle参数
 
-完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
+* 完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
 
 <div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_3.png"/></div>
 <div align=center>饼图</div>
 
+
+2、添加中间区域的UIView，让其看似是一个圆环
+
+中间视图其实就是一个UIView，然后设置layer.cornerRadius是宽，高的一半，再clipsToBounds 就可以实现。如果需要展示什么标题，可以加入Label。
+
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_4.png"/></div>
+<div align=center>环形图</div>
+
+3、
 
 
 
