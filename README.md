@@ -3,7 +3,7 @@
 #### 背景
 >需求：需要做一个环形图用于展示各部分之间的比例
 
-<div align=center><img width= "371" height= "262" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_1.png"/></div>
+<div align=center><img width= "371" height= "262" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_1.png"/></div>
 
 <div align=center>示意图</div>
 
@@ -56,7 +56,7 @@
 
 4）然后将path路径闭合成一块区域，就变成了扇形区域。
 
-<div align=center><img width="369" height="324" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_2.png"/></div>
+<div align=center><img width="369" height="324" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_2.png"/></div>
 <div align=center>扇形图</div>
 
 
@@ -64,7 +64,7 @@
 
 * 完成示例图中的设计需要两个扇形区域，一个比例为0.6另一个为0.4：
 
-<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_3.png"/></div>
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_3.png"/></div>
 <div align=center>饼图</div>
 
 
@@ -72,7 +72,7 @@
 
 中间视图其实就是一个UIView，然后设置layer.cornerRadius是宽，高的一半，再clipsToBounds 就可以实现。如果需要展示什么标题，可以加入Label。
 
-<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_4.png"/></div>
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_4.png"/></div>
 <div align=center>环形图</div>
 
 3、描述线的点绘制
@@ -105,7 +105,7 @@ pointView.clipsToBounds = YES;
 
 cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一个点对应在Y轴上的点，可以理解这点就容易读懂pointX 和 pointY的计算。饼图的半径是50，这里取半径为60的中点延长线上的点，计算出来就是指示线圆圈的中心点。
 
-<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_5.png"/></div>
+<div align=center><img width="375" height="375" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_5.png"/></div>
 <div align=center>指示线圆圈和圆点</div>
 
 4、画线
@@ -114,5 +114,5 @@ cos（）函数是求一个点对应在X轴上的点，sin（）函数是求一�
 
 5、画一个Label在直线的上方，然后根据自己的需要设置相应的颜色、字体大小等参数。
 
-<div align=center><img width="375" height="812" src="https://github.com/CalvinLeo/CLPieChart/blob/master/images/sample_image_6.png"/></div>
+<div align=center><img width="375" height="812" src="https://github.com/CalvinLeo/CLPieChartView/blob/master/images/sample_image_6.png"/></div>
 <div align=center>最终效果图</div>
